@@ -1,3 +1,5 @@
+// Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
+// ((hoteles != "genova") || (hotel != "roma") || (hotel != "fortunato"))
 let dias, personas, hoteles
 const habitacion = 2
 
@@ -40,27 +42,5 @@ if (reserva === "si") {
     alert("Entonces...")
 }
 
-
-
-
-
-
-
-// const total = (precioHabitacion, personas, dias) => (precioHabitacion * personas) * dias
-// console.log(total)
-
-// function precio (parametro1, parametro2) {
-//  return parametro1, parametro2
-// }
-//  let multiplicar = multiplicar (dia * personas)
-//     console.log (precio)
-
-
-
-
-
-// function sumar (parametro1, parametro2) {
-//     return parametro1 + parametro2
-// }
-// let sumar = sumar (dias, personas)
-
+// Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
+// ((hotel != "genova") || (hotel != "roma") || (hotel != "fortunato"))
