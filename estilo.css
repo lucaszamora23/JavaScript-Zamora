@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(./italia.jpg);
+    background-size: cover;
+}
+
+div{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+h1{
+    font-size: 7em;
+    font-family: 'Italianno', cursive;
+    color: white;
+    text-shadow: 0px 5px 3px #008c45, 2px 7px 3px #fff, 4px 9px #cd212a;
+}
