@@ -1,5 +1,5 @@
 // Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
-// ((hoteles != "genova") || (hotel != "roma") || (hotel != "fortunato"))
+// ((hoteles !== "genova") || (hoteles !== "roma") || (hoteles !== "fortunato"))
 let dias, personas, hoteles
 const habitacion = 2
 
@@ -24,11 +24,15 @@ if(isNaN(dias)) {
 do{
     hoteles = prompt("Tenemos 3 hoteles para que elijas donde quedarte, el hotel ROMA, el hotel GENOVA, o el hotel FORTUNATO, elegí el que vos prefieras").toLowerCase()
 
-    if(hoteles != "fortunato") {
-    alert("Ingresá un hotel de los dichos anteriormente")}
+    if (hoteles !=="genova" || hoteles !=="roma" || hoteles !=="fortunato"){
+
+        alert("Ingresá un hotel de los dichos anteriormente")
+
+    }
 
 
-} while (hoteles != "fortunato")
+} while (hoteles !=="genova" || hoteles !=="roma" || hoteles !=="fortunato")
+
 
 
 const total = (habitacion * dias)
