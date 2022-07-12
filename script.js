@@ -1,8 +1,8 @@
 // Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
 // ((hoteles !== "genova") || (hoteles !== "roma") || (hoteles !== "fortunato"))
-let dias, personas, hoteles
+let dias, personas, destino
 const habitacion = 2
-
+let hoteles= "fortunato" || "genova" || "roma"
 
 do {
 
@@ -22,29 +22,37 @@ if(isNaN(dias)) {
 } while (isNaN(dias))
 
 do{
-    hoteles = prompt("Tenemos 3 hoteles para que elijas donde quedarte, el hotel ROMA, el hotel GENOVA, o el hotel FORTUNATO, elegí el que vos prefieras").toLowerCase()
+    hoteles = prompt("Tenemos 3 hoteles para que elijas donde quedarte, el hotel ROMA, el hotel GENOVA, o el hotel FORTUNATO, elegí el que vos prefieras");
 
-    if (hoteles !=="genova" || hoteles !=="roma" || hoteles !=="fortunato"){
+    if (hoteles =="genova" || hoteles =="roma" || hoteles =="fortunato"){
 
-        alert("Ingresá un hotel de los dichos anteriormente")
-
+        alert("perfecto!")
+        break
     }
-
+    else if (hoteles != "genova" || hoteles !="fortunato" ||hoteles != "roma"){
+        alert("Ingresá un hotel de los dichos anteriormente")
+    }
 
 } while (hoteles !=="genova" || hoteles !=="roma" || hoteles !=="fortunato")
 
 
 
 const total = (habitacion * dias)
-
+do{
     reserva = (prompt(`El total a pagar es de €${total} euros. Desea continuar con la reserva?`)).toLowerCase()
  
 if (reserva === "no") {
-    prompt("Que lástima, te lo perdés... mentira!")
+    alert("Que lástima, te lo perdés... mentira!")
+    break
 }
 if (reserva === "si") {
     alert("Entonces...")
+    break
 }
+else{
+    alert("ingresar si o no")
+}
+}while(reserva !== "si" || reserva !== "no")
 
 // Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
 // ((hotel != "genova") || (hotel != "roma") || (hotel != "fortunato"))
