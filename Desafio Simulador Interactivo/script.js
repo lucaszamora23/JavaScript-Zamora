@@ -1,5 +1,3 @@
-// Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
-// ((hoteles !== "genova") || (hoteles !== "roma") || (hoteles !== "fortunato"))
 let dias, personas, destino
 const habitacion = 2
 let hoteles= "fortunato" || "genova" || "roma"
@@ -53,6 +51,3 @@ else{
     alert("ingresar si o no")
 }
 }while(reserva !== "si" || reserva !== "no")
-
-// Bajo ninguna circunstancia pude lograr que la variable acepte esta orden, y no se que hice mal, busqué x todos lados
-// ((hotel != "genova") || (hotel != "roma") || (hotel != "fortunato"))
